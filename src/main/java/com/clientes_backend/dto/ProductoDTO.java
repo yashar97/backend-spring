@@ -1,14 +1,15 @@
-package com.clientes_backend.model;
+package com.clientes_backend.dto;
 
 import java.math.BigDecimal;
 
-public class Producto {
+public class ProductoDTO {
 
     private Integer id;
     private String nombre;
     private Integer categoria;
     private Integer stock;
     private BigDecimal precio;
+    private String precioFormateado;
 
     public Integer getId() {
         return id;
@@ -48,5 +49,13 @@ public class Producto {
 
     public void setPrecio(BigDecimal precio) {
         this.precio = precio;
+    }
+
+    public String getPrecioFormateado() {
+        return precioFormateado;
+    }
+
+    public void setPrecioFormateado(String precioFormateado) {
+        this.precioFormateado = precioFormateado;
     }
 }
