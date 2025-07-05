@@ -4,7 +4,6 @@ import com.clientes_backend.model.Cliente;
 import com.clientes_backend.response.GenericResponse;
 import com.clientes_backend.service.ClienteService;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
